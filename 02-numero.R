@@ -1,3 +1,8 @@
+# Comprovem que l'script s'executi de forma interactiva
+if(!interactive()){
+  stop("L'script únicament es pot executar des d'una consola d'R")
+}
+
 # Creem una funció per llegir un valor escrit
 llegirNumero <- function(){
   cat ("Escriu el número que creus que és i després prèm [enter]. (Escriu 0 per abandonar)")
